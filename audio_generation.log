@@ -107,7 +107,7 @@ NameError: name 'ipd' is not defined
 2024-10-10 11:00:56,635 - INFO - T5 will be evaluated with autocast as float32
 2024-10-10 11:01:02,624 - INFO - MusicGen model loaded.
 2024-10-10 11:01:02,969 - INFO - New pattern, time steps: 400, sequence steps: 404
-2024-10-10 11:01:30,535 - INFO - Audio generation started for prompt: 'Futuristic cyberpunk with distorted guitars, heavy industrial beats, and eerie vocal samples'
+2024-10-10 11:01:30,535 - INFO - Audio generation started for prompt: 'Futuristic cyberpunk with distorted guitars, heavy industrial beats, and eerieï¿½vocalï¿½samples'
 2024-10-10 11:01:30,537 - INFO - Audio tensor shape before saving: torch.Size([1, 256000])
 2024-10-10 11:01:30,566 - INFO - Saved: ./static/audio_output\generated_audio_medium_1.wav
 Error: WARNING[XFORMERS]: xFormers can't load C++/CUDA extensions. xFormers was built for:
@@ -126,7 +126,7 @@ C:\Users\eerla\anaconda3\envs\ML_generate_music\lib\site-packages\torch\nn\utils
   warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
 2024-10-10 11:01:02,624 - INFO - MusicGen model loaded.
 2024-10-10 11:01:02,969 - INFO - New pattern, time steps: 400, sequence steps: 404
-2024-10-10 11:01:30,535 - INFO - Audio generation started for prompt: 'Futuristic cyberpunk with distorted guitars, heavy industrial beats, and eerie vocal samples'
+2024-10-10 11:01:30,535 - INFO - Audio generation started for prompt: 'Futuristic cyberpunk with distorted guitars, heavy industrial beats, and eerieï¿½vocalï¿½samples'
 2024-10-10 11:01:30,537 - INFO - Audio tensor shape before saving: torch.Size([1, 256000])
 2024-10-10 11:01:30,566 - INFO - Saved: ./static/audio_output\generated_audio_medium_1.wav
 Traceback (most recent call last):
