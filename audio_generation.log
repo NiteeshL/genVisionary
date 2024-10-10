@@ -33,3 +33,122 @@ Traceback (most recent call last):
     ipd.display(ipd.Audio(audio, rate=sample_rate))
 NameError: name 'ipd' is not defined
 
+2024-10-10 10:57:52,244 - INFO - Output directory created or already exists.
+2024-10-10 10:57:56,072 - INFO - T5 will be evaluated with autocast as float32
+2024-10-10 10:58:02,354 - INFO - MusicGen model loaded.
+2024-10-10 10:58:02,710 - INFO - New pattern, time steps: 400, sequence steps: 404
+2024-10-10 10:58:28,938 - INFO - Audio generation started for prompt: '80s synthwave with distorted vocals and a pulsating retro bassline'
+2024-10-10 10:58:28,940 - INFO - Audio tensor shape before saving: torch.Size([1, 256000])
+2024-10-10 10:58:28,970 - INFO - Saved: ./static/audio_output\generated_audio_medium_1.wav
+Error: WARNING[XFORMERS]: xFormers can't load C++/CUDA extensions. xFormers was built for:
+    PyTorch 2.1.0+cu121 with CUDA 1201 (you have 2.1.0+cu118)
+    Python  3.9.13 (you have 3.9.20)
+  Please reinstall xformers (see https://github.com/facebookresearch/xformers#installing-xformers)
+  Memory-efficient attention, SwiGLU, sparse and more won't be available.
+  Set XFORMERS_MORE_DETAILS=1 for more details
+A matching Triton is not available, some optimizations will not be enabled.
+Error caught was: No module named 'triton'
+2024-10-10 10:57:52,244 - INFO - Output directory created or already exists.
+C:\Users\eerla\anaconda3\envs\ML_generate_music\lib\site-packages\audiocraft\models\musicgen.py:80: UserWarning: MusicGen pretrained model relying on deprecated checkpoint mapping. Please use full pre-trained id instead: facebook/musicgen-medium
+  warnings.warn(
+2024-10-10 10:57:56,072 - INFO - T5 will be evaluated with autocast as float32
+C:\Users\eerla\anaconda3\envs\ML_generate_music\lib\site-packages\torch\nn\utils\weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+2024-10-10 10:58:02,354 - INFO - MusicGen model loaded.
+2024-10-10 10:58:02,710 - INFO - New pattern, time steps: 400, sequence steps: 404
+2024-10-10 10:58:28,938 - INFO - Audio generation started for prompt: '80s synthwave with distorted vocals and a pulsating retro bassline'
+2024-10-10 10:58:28,940 - INFO - Audio tensor shape before saving: torch.Size([1, 256000])
+2024-10-10 10:58:28,970 - INFO - Saved: ./static/audio_output\generated_audio_medium_1.wav
+Traceback (most recent call last):
+  File "C:\Users\eerla\OneDrive\Desktop\movie_gen\genVisionary\generate_audio.py", line 62, in <module>
+    generate_audio(prompt)
+  File "C:\Users\eerla\OneDrive\Desktop\movie_gen\genVisionary\generate_audio.py", line 54, in generate_audio
+    display_audio(res, 32000)
+  File "C:\Users\eerla\anaconda3\envs\ML_generate_music\lib\site-packages\audiocraft\utils\notebook.py", line 32, in display_audio
+    ipd.display(ipd.Audio(audio, rate=sample_rate))
+NameError: name 'ipd' is not defined
+
+2024-10-10 10:58:46,259 - INFO - Output directory created or already exists.
+2024-10-10 10:58:49,657 - INFO - T5 will be evaluated with autocast as float32
+2024-10-10 10:58:54,865 - INFO - MusicGen model loaded.
+2024-10-10 10:58:55,233 - INFO - New pattern, time steps: 400, sequence steps: 404
+2024-10-10 10:59:22,555 - INFO - Audio generation started for prompt: '80s synthwave with distorted vocals and a pulsating retro bassline'
+2024-10-10 10:59:22,556 - INFO - Audio tensor shape before saving: torch.Size([1, 256000])
+2024-10-10 10:59:22,587 - INFO - Saved: ./static/audio_output\generated_audio_medium_1.wav
+Error: WARNING[XFORMERS]: xFormers can't load C++/CUDA extensions. xFormers was built for:
+    PyTorch 2.1.0+cu121 with CUDA 1201 (you have 2.1.0+cu118)
+    Python  3.9.13 (you have 3.9.20)
+  Please reinstall xformers (see https://github.com/facebookresearch/xformers#installing-xformers)
+  Memory-efficient attention, SwiGLU, sparse and more won't be available.
+  Set XFORMERS_MORE_DETAILS=1 for more details
+A matching Triton is not available, some optimizations will not be enabled.
+Error caught was: No module named 'triton'
+2024-10-10 10:58:46,259 - INFO - Output directory created or already exists.
+C:\Users\eerla\anaconda3\envs\ML_generate_music\lib\site-packages\audiocraft\models\musicgen.py:80: UserWarning: MusicGen pretrained model relying on deprecated checkpoint mapping. Please use full pre-trained id instead: facebook/musicgen-medium
+  warnings.warn(
+2024-10-10 10:58:49,657 - INFO - T5 will be evaluated with autocast as float32
+C:\Users\eerla\anaconda3\envs\ML_generate_music\lib\site-packages\torch\nn\utils\weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+2024-10-10 10:58:54,865 - INFO - MusicGen model loaded.
+2024-10-10 10:58:55,233 - INFO - New pattern, time steps: 400, sequence steps: 404
+2024-10-10 10:59:22,555 - INFO - Audio generation started for prompt: '80s synthwave with distorted vocals and a pulsating retro bassline'
+2024-10-10 10:59:22,556 - INFO - Audio tensor shape before saving: torch.Size([1, 256000])
+2024-10-10 10:59:22,587 - INFO - Saved: ./static/audio_output\generated_audio_medium_1.wav
+Traceback (most recent call last):
+  File "C:\Users\eerla\OneDrive\Desktop\movie_gen\genVisionary\generate_audio.py", line 62, in <module>
+    generate_audio(prompt)
+  File "C:\Users\eerla\OneDrive\Desktop\movie_gen\genVisionary\generate_audio.py", line 54, in generate_audio
+    display_audio(res, 32000)
+  File "C:\Users\eerla\anaconda3\envs\ML_generate_music\lib\site-packages\audiocraft\utils\notebook.py", line 32, in display_audio
+    ipd.display(ipd.Audio(audio, rate=sample_rate))
+NameError: name 'ipd' is not defined
+
+2024-10-10 11:00:53,237 - INFO - Output directory created or already exists.
+2024-10-10 11:00:56,635 - INFO - T5 will be evaluated with autocast as float32
+2024-10-10 11:01:02,624 - INFO - MusicGen model loaded.
+2024-10-10 11:01:02,969 - INFO - New pattern, time steps: 400, sequence steps: 404
+2024-10-10 11:01:30,535 - INFO - Audio generation started for prompt: 'Futuristic cyberpunk with distorted guitars, heavy industrial beats, and eerie�vocal�samples'
+2024-10-10 11:01:30,537 - INFO - Audio tensor shape before saving: torch.Size([1, 256000])
+2024-10-10 11:01:30,566 - INFO - Saved: ./static/audio_output\generated_audio_medium_1.wav
+Error: WARNING[XFORMERS]: xFormers can't load C++/CUDA extensions. xFormers was built for:
+    PyTorch 2.1.0+cu121 with CUDA 1201 (you have 2.1.0+cu118)
+    Python  3.9.13 (you have 3.9.20)
+  Please reinstall xformers (see https://github.com/facebookresearch/xformers#installing-xformers)
+  Memory-efficient attention, SwiGLU, sparse and more won't be available.
+  Set XFORMERS_MORE_DETAILS=1 for more details
+A matching Triton is not available, some optimizations will not be enabled.
+Error caught was: No module named 'triton'
+2024-10-10 11:00:53,237 - INFO - Output directory created or already exists.
+C:\Users\eerla\anaconda3\envs\ML_generate_music\lib\site-packages\audiocraft\models\musicgen.py:80: UserWarning: MusicGen pretrained model relying on deprecated checkpoint mapping. Please use full pre-trained id instead: facebook/musicgen-medium
+  warnings.warn(
+2024-10-10 11:00:56,635 - INFO - T5 will be evaluated with autocast as float32
+C:\Users\eerla\anaconda3\envs\ML_generate_music\lib\site-packages\torch\nn\utils\weight_norm.py:30: UserWarning: torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.
+  warnings.warn("torch.nn.utils.weight_norm is deprecated in favor of torch.nn.utils.parametrizations.weight_norm.")
+2024-10-10 11:01:02,624 - INFO - MusicGen model loaded.
+2024-10-10 11:01:02,969 - INFO - New pattern, time steps: 400, sequence steps: 404
+2024-10-10 11:01:30,535 - INFO - Audio generation started for prompt: 'Futuristic cyberpunk with distorted guitars, heavy industrial beats, and eerie�vocal�samples'
+2024-10-10 11:01:30,537 - INFO - Audio tensor shape before saving: torch.Size([1, 256000])
+2024-10-10 11:01:30,566 - INFO - Saved: ./static/audio_output\generated_audio_medium_1.wav
+Traceback (most recent call last):
+  File "C:\Users\eerla\OneDrive\Desktop\movie_gen\genVisionary\generate_audio.py", line 62, in <module>
+    generate_audio(prompt)
+  File "C:\Users\eerla\OneDrive\Desktop\movie_gen\genVisionary\generate_audio.py", line 54, in generate_audio
+    display_audio(res, 32000)
+  File "C:\Users\eerla\anaconda3\envs\ML_generate_music\lib\site-packages\audiocraft\utils\notebook.py", line 32, in display_audio
+    ipd.display(ipd.Audio(audio, rate=sample_rate))
+NameError: name 'ipd' is not defined
+
+2024-10-10 11:05:50,144 - INFO - Output directory created or already exists.
+2024-10-10 11:05:53,811 - INFO - T5 will be evaluated with autocast as float32
+2024-10-10 11:05:59,258 - INFO - MusicGen model loaded.
+2024-10-10 11:05:59,602 - INFO - New pattern, time steps: 400, sequence steps: 404
+2024-10-10 11:06:26,445 - INFO - Audio generation started for prompt: 'Futuristic cyberpunk with distorted guitars, heavy industrial beats, and eerie vocal samples'
+2024-10-10 11:06:26,446 - INFO - Audio tensor shape before saving: torch.Size([1, 256000])
+2024-10-10 11:06:26,480 - INFO - Saved: audio_output\generated_audio_medium_1.wav
+2024-10-10 11:07:28,024 - INFO - Output directory created or already exists.
+2024-10-10 11:07:31,530 - INFO - T5 will be evaluated with autocast as float32
+2024-10-10 11:07:37,130 - INFO - MusicGen model loaded.
+2024-10-10 11:07:37,568 - INFO - New pattern, time steps: 400, sequence steps: 404
+2024-10-10 11:08:04,478 - INFO - Audio generation started for prompt: 'Futuristic cyberpunk with distorted guitars, heavy industrial beats, and eerie vocal samples'
+2024-10-10 11:08:04,479 - INFO - Audio tensor shape before saving: torch.Size([1, 256000])
+2024-10-10 11:08:04,508 - INFO - Saved: audio_output\generated_audio_medium_1.wav
