@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>FUNTERTAINMENT</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="iconlogo.png" alt="Berger Hut Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="image.html">Image</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero-image">
+    <div class="hero-image-div"></div>
+    <div class="hero-content">
+      <h1>Welcome to GenVisionary</h1>
+      <p>Describe the image you want to create</p>
+      <textarea name="imageprompt" id="imageprompt"></textarea>
+      <a href="#menu" class="btn">Generate</a>
+    </div>
+  </section>
+
+
+  <section class="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="burger1.jpg" alt="Burger 1">
+        <h3>Classic Cheeseburger</h3>
+        <p>A juicy beef patty topped with melted cheese, fresh lettuce, tomato, and our special sauce. Served with a
+          side of crispy fries.</p>
+      </div>
+      <div class="menu-item">
+        <img src="burger2.jpg" alt="Burger 2">
+        <h3>Veggie Delight</h3>
+        <p>A delicious veggie patty made from a blend of fresh vegetables and spices. Topped with avocado, sprouts, and
+          tangy mayo. Served with a side of sweet potato fries.</p>
+      </div>
+      <div class="menu-item">
+        <img src="burger3.jpg" alt="Burger 3">
+        <h3>Spicy BBQ Burger</h3>
+        <p>A fiery burger packed with flavor! Grilled chicken breast smothered in spicy BBQ sauce, topped with
+          jalapenos, crispy onion rings, and chipotle mayo. Served with a side of coleslaw.</p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="iconlogo.png" alt="Logo">
+      </div>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <p class="footer-text">&copy; 2024 GenVisionary. All rights reserved.</p>
+  </footer>
+
+
+</body>
+
+
+
+<script>
+  const textarea = document.getElementById('musicprompt');
+  textarea.addEventListener('input', function() {
+      this.style.height = 'auto'; 
+      this.style.height = this.scrollHeight + 'px'; 
+  });
+</script>
