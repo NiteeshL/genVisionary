@@ -1,8 +1,9 @@
 import os
 import subprocess
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for, flash
 
 app = Flask(__name__)
+app.secret_key = 'your_secret_key'  # Required for session management (flashing messages)
 
 # Route to display the form
 @app.route('/')
@@ -26,14 +27,13 @@ def generate():
         # Log the error message to the log file
         with open("audio_generation.log", "a") as log_file:
             log_file.write(f"Error: {result.stderr}\n")
-        # Return a user-friendly error message without crashing the app
-        return "An error occurred while generating audio. Please try again."
+        # Flash an error message and redirect to the home page
+        flash("An error occurred while generating audio. Please try again.", "error")
+        return redirect(url_for('index'))
 
-    # Read the log file for successful execution
-    with open("audio_generation.log", "r") as log_file:
-        log_contents = log_file.read()
-
-    return f"You entered: {music_prompt}. Audio generation complete!<br><br>Logs:<br><pre>{log_contents}</pre>"
+    # Flash a success message and redirect to the home page
+    flash("Audio generation complete! Check the audio_output directory.", "success")
+    return redirect(url_for('index'))
 
 if __name__ == '__main__':
     app.run(debug=True)

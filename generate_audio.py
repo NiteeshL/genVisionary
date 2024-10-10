@@ -2,7 +2,6 @@ import os
 import sys
 import logging
 from audiocraft.models import musicgen
-from audiocraft.utils.notebook import display_audio
 import torch
 import torchaudio
 
@@ -18,7 +17,7 @@ logging.basicConfig(
 
 def generate_audio(prompt):
     # Create the output directory if it doesn't exist
-    output_dir = './static/audio_output'
+    output_dir = 'audio_output'
     os.makedirs(output_dir, exist_ok=True)
     logging.info("Output directory created or already exists.")
 
@@ -50,8 +49,8 @@ def generate_audio(prompt):
         else:
             logging.warning(f"Skipping saving for audio {i + 1}, unexpected shape: {audio_cpu.shape}")
 
-    # Optional: Display the first audio file in the notebook (if using a Jupyter notebook)
-    display_audio(res, 32000)
+    # Remove the display_audio function call
+    # display_audio(res, 32000)
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
